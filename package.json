@@ -1,0 +1,16 @@
+{
+  "name": "credit-risk-portfolio-dashboard",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Tablero web de analítica de cartera de crédito (EL = PD x LGD x EAD, matrices de transición de Markov) con datos sintéticos reproducibles.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @credit-risk/core && npm run build -w credit-risk-api && npm run build -w credit-risk-dashboard-web",
+    "build:web": "npm run build -w @credit-risk/core && npm run build -w credit-risk-dashboard-web",
+    "test": "npm run test -w @credit-risk/core && npm run test -w credit-risk-dashboard-web",
+    "lint": "npm run lint -w credit-risk-dashboard-web"
+  }
+}
