@@ -1,0 +1,184 @@
+{
+  "tables": [
+    {
+      "name": "segmentos",
+      "rows": 5,
+      "columns": [
+        {
+          "name": "segmento",
+          "type": "TEXT",
+          "length": 50
+        },
+        {
+          "name": "segmento_id",
+          "type": "TEXT",
+          "length": 50
+        },
+        {
+          "name": "cuentas",
+          "type": "TEXT",
+          "length": 50
+        },
+        {
+          "name": "exposicion",
+          "type": "TEXT",
+          "length": 50
+        },
+        {
+          "name": "pd",
+          "type": "TEXT",
+          "length": 50
+        },
+        {
+          "name": "lgd",
+          "type": "TEXT",
+          "length": 50
+        },
+        {
+          "name": "perdida_esperada",
+          "type": "TEXT",
+          "length": 50
+        },
+        {
+          "name": "bucket_0",
+          "type": "TEXT",
+          "length": 50
+        },
+        {
+          "name": "bucket_1_29",
+          "type": "TEXT",
+          "length": 50
+        },
+        {
+          "name": "bucket_30_59",
+          "type": "TEXT",
+          "length": 50
+        },
+        {
+          "name": "bucket_60_89",
+          "type": "TEXT",
+          "length": 50
+        },
+        {
+          "name": "bucket_90_mas",
+          "type": "TEXT",
+          "length": 50
+        },
+        {
+          "name": "ifrs9_etapa1",
+          "type": "TEXT",
+          "length": 50
+        },
+        {
+          "name": "ifrs9_etapa2",
+          "type": "TEXT",
+          "length": 50
+        },
+        {
+          "name": "ifrs9_etapa3",
+          "type": "TEXT",
+          "length": 50
+        }
+      ],
+      "csv": "/home/hatch/workspace/credit-risk-dashboard/access/csv/segmentos.csv"
+    },
+    {
+      "name": "mensual",
+      "rows": 12,
+      "columns": [
+        {
+          "name": "mes",
+          "type": "TEXT",
+          "length": 50
+        },
+        {
+          "name": "etiqueta",
+          "type": "TEXT",
+          "length": 50
+        },
+        {
+          "name": "exposicion",
+          "type": "TEXT",
+          "length": 50
+        },
+        {
+          "name": "perdida_esperada",
+          "type": "TEXT",
+          "length": 50
+        },
+        {
+          "name": "morosidad",
+          "type": "TEXT",
+          "length": 50
+        },
+        {
+          "name": "npl",
+          "type": "TEXT",
+          "length": 50
+        }
+      ],
+      "csv": "/home/hatch/workspace/credit-risk-dashboard/access/csv/mensual.csv"
+    },
+    {
+      "name": "buckets",
+      "rows": 5,
+      "columns": [
+        {
+          "name": "bucket",
+          "type": "TEXT",
+          "length": 50
+        },
+        {
+          "name": "etiqueta",
+          "type": "TEXT",
+          "length": 50
+        },
+        {
+          "name": "exposicion",
+          "type": "TEXT",
+          "length": 50
+        }
+      ],
+      "csv": "/home/hatch/workspace/credit-risk-dashboard/access/csv/buckets.csv"
+    },
+    {
+      "name": "transiciones",
+      "rows": 25,
+      "columns": [
+        {
+          "name": "bucket_origen",
+          "type": "TEXT",
+          "length": 50
+        },
+        {
+          "name": "bucket_destino",
+          "type": "TEXT",
+          "length": 50
+        },
+        {
+          "name": "probabilidad",
+          "type": "TEXT",
+          "length": 50
+        }
+      ],
+      "csv": "/home/hatch/workspace/credit-risk-dashboard/access/csv/transiciones.csv"
+    },
+    {
+      "name": "resumen",
+      "rows": 10,
+      "columns": [
+        {
+          "name": "metrica",
+          "type": "TEXT",
+          "length": 50
+        },
+        {
+          "name": "valor",
+          "type": "TEXT",
+          "length": 50
+        }
+      ],
+      "csv": "/home/hatch/workspace/credit-risk-dashboard/access/csv/resumen.csv"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+# Dependencias de Python del exportador (scripts/export_portfolio.py).
+# El resto del proyecto es Node (ver package.json); esto es solo para
+# exportar el portafolio a Excel, SQLite y CSV para Tableau.
+pandas>=2.0
+openpyxl>=3.1
+pytest>=8.0

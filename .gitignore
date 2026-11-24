@@ -6,3 +6,12 @@ coverage/
 .env
 .env.*
 !.env.example
+
+exports/
+logs/
+scripts/__pycache__/
+
+# Jars de Jackcess y compilados del constructor de Access (se regeneran
+# solos al correr access/build_access.sh; el .accdb y los CSV/schema sí van)
+access/lib/
+access/build/
